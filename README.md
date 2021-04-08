@@ -1,5 +1,9 @@
 # Discord Task Manager Bot
 
+## Usage
+
+To use directly, click on this [link](https://discord.com/api/oauth2/authorize?client_id=829723733966979142&permissions=8&scope=bot)
+
 ## Setup
 
 1. Clone
