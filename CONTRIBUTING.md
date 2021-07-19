@@ -1,5 +1,6 @@
 # How to contribute
 First of all, thanks for taking the time out to contribute!
+Make sure to follow the CODE_OF_CONDUCT.md
 
 ## Testing
 There's no testing in place at the moment. A pull request for the same will be very much appreciated.
