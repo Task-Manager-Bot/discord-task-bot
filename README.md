@@ -40,3 +40,6 @@ cp .env.example .env
 npm run dev
 yarn dev
 ```
+  
+## Contributing
+Read the CONTRIBUTING.md file
