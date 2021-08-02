@@ -6,15 +6,11 @@ const client = new Discord.Client();
 const Task = require("./models/Task");
 
 const PREFIX = "t!";
-const PREFIXTWO = "t~";
 
 client.once("ready", () => Task.sync());
 
 client.on("message", async (message) => {
-  if (
-    message.content.startsWith(PREFIX) ||
-    message.content.startsWith(PREFIXTWO)
-  ) {
+  if (message.content.startsWith(PREFIX)) {
     const input = message.content.slice(PREFIX.length).trim().split(" ");
     const command = input.shift();
     const commandArgs = input.join(" ");
