@@ -11,15 +11,15 @@ const PREFIXTWO = "t~";
 client.once("ready", () => Task.sync());
 
 client.on("message", async (message) => {
-  if (message.content.startsWith(PREFIX)) {
+  if (
+    message.content.startsWith(PREFIX) ||
+    message.content.startsWith(PREFIXTWO)
+  ) {
     const input = message.content.slice(PREFIX.length).trim().split(" ");
     const command = input.shift();
     const commandArgs = input.join(" ");
 
-    if (
-      message.content.startsWith(PREFIX) ||
-      message.content.startsWith(PREFIXTWO)
-    ) {
+    if (command === "add") {
       try {
         const splitArgs = commandArgs.split(" ");
         const textWithTaggedUser = splitArgs.join(" ");
