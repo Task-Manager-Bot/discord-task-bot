@@ -76,7 +76,7 @@ client.on("message", async (message) => {
         .setTitle("Task List (Not Done)")
         .setDescription(
           messageContent +
-            "\n To tick of a task, send `t!done 1`. Replace 1 with the ID(last digit)" +
+            "\n To tick off a task, send `t!done 1`. Replace 1 with the ID(last digit)" +
             "\n To view tasks done, send `t!done-list`"
         );
 
