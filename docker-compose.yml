@@ -32,7 +32,7 @@ services:
     stdin_open: true
     tty: true
     volumes: 
-      - ./:/app/.
+      - ./:/app/src/.
 
 volumes:
   db-config:

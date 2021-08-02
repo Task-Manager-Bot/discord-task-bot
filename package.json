@@ -14,6 +14,7 @@
   },
   "scripts": {
     "dev": "nodemon index",
-    "start": "node index.js"
+    "start": "node index.js",
+    "server": "nodemon src/index"
   }
 }
