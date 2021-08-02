@@ -1,0 +1,22 @@
+name: GCP Deploy
+
+on:
+  push:
+    branches: 
+      - master
+      
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      - name: CD and Pull from Github
+        uses: fifsky/ssh-action@master
+        with:
+          command: |
+            cd ~/code/discord-task-bot
+            git pull origin master
+          host: ${{ secrets.HOST }}
+          user: root
+          password: ${{ secrets.HOST_PASSWORD }}
