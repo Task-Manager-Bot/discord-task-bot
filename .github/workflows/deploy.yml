@@ -19,4 +19,4 @@ jobs:
             git pull origin master
           host: ${{ secrets.HOST }}
           user: root
-          password: ${{ secrets.HOST_PASSWORD }}
+          pass: ${{ secrets.HOST_PASSWORD }}
