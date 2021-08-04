@@ -91,6 +91,17 @@ client.on("message", async (message) => {
       const splitArgs = commandArgs.split(" ");
       const id = parseInt(splitArgs.shift());
 
+      if (!id) {
+        const errorEmbed = new Discord.MessageEmbed()
+          .setColor("#0099ff")
+          .setTitle("Error")
+          .setDescription(
+            "You need to enter the id of the task to tick it off\n" +
+              "Enter `t!help` for help"
+          );
+        return message.channel.send(errorEmbed);
+      }
+
       const task = await Task.findByPk(id);
       if (task.serverId === message.guild.id) {
         await Task.update(
@@ -159,6 +170,16 @@ client.on("message", async (message) => {
       const splitArgs = commandArgs.split(" ");
       const id = parseInt(splitArgs.shift());
 
+      if (!id) {
+        const errorEmbed = new Discord.MessageEmbed()
+          .setColor("#0099ff")
+          .setTitle("Error")
+          .setDescription(
+            "You need to enter the id of the task to add it back\n" +
+              "Enter `t!help` for help"
+          );
+        return message.channel.send(errorEmbed);
+      }
       const task = await Task.findByPk(id);
       if (task.serverId === message.guild.id) {
         await Task.update(
@@ -174,7 +195,7 @@ client.on("message", async (message) => {
           .setColor("#0099ff")
           .setTitle("Error")
           .setDescription(
-            "You can only tick off a task from the current server"
+            "You can only add a task back from the current server"
           );
         return message.channel.send(errorEmbed);
       }
