@@ -17,7 +17,7 @@ jobs:
           command: |
             cd ~/code/discord-task-bot
             git pull origin master
-            docker restart discord-task-bot_bot_1
+            docker-compose up --build -d
           host: ${{ secrets.HOST }}
           user: root
           pass: ${{ secrets.HOST_PASSWORD }}
