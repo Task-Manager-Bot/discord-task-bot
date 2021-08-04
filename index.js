@@ -91,14 +91,25 @@ client.on("message", async (message) => {
       const splitArgs = commandArgs.split(" ");
       const id = parseInt(splitArgs.shift());
 
-      await Task.update(
-        { isDone: true },
-        {
-          where: {
-            id,
-          },
-        }
-      );
+      const task = await Task.findByPk(id);
+      if (task.serverId === message.guild.id) {
+        await Task.update(
+          { isDone: true },
+          {
+            where: {
+              id,
+            },
+          }
+        );
+      } else {
+        const errorEmbed = new Discord.MessageEmbed()
+          .setColor("#0099ff")
+          .setTitle("Error")
+          .setDescription(
+            "You can only tick off a task from the current server"
+          );
+        return message.channel.send(errorEmbed);
+      }
 
       const embed = new Discord.MessageEmbed()
         .setColor("#0099ff")
@@ -148,14 +159,25 @@ client.on("message", async (message) => {
       const splitArgs = commandArgs.split(" ");
       const id = parseInt(splitArgs.shift());
 
-      await Task.update(
-        { isDone: false },
-        {
-          where: {
-            id,
-          },
-        }
-      );
+      const task = await Task.findByPk(id);
+      if (task.serverId === message.guild.id) {
+        await Task.update(
+          { isDone: false },
+          {
+            where: {
+              id,
+            },
+          }
+        );
+      } else {
+        const errorEmbed = new Discord.MessageEmbed()
+          .setColor("#0099ff")
+          .setTitle("Error")
+          .setDescription(
+            "You can only tick off a task from the current server"
+          );
+        return message.channel.send(errorEmbed);
+      }
       const embed = new Discord.MessageEmbed()
         .setColor("#0099ff")
         .setTitle("Undo")
