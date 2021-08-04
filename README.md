@@ -15,6 +15,32 @@ Just add, assign(if needed) and mark as done(tick off)
 
 ## Setup
 
+### With Docker
+1. Clone
+
+```sh
+git clone git@github.com:kavin25/discord-task-bot.git
+```
+
+2. Install Dependencies
+
+```sh
+npm install
+yarn
+```
+
+3. Fill .env with Discord Bot Token (Developer Portal)
+
+```sh
+cp .env.docker.example .env
+```
+  
+4. Run docker compose
+```sh
+docker-compose up
+```
+
+### Without Docker
 1. Clone
 
 ```sh
@@ -33,6 +59,8 @@ yarn
 ```sh
 cp .env.example .env
 ```
+  
+4. Change DB host in `db` to `localhost` in `config/sequelize.js`
 
 4. Run locally (using nodemon)
 
