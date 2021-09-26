@@ -16,7 +16,7 @@ Create Pull Requests only for existing Issues (which are assigned to you). If yo
 
 
 ### Create a branch
-1. `git checkout main` from any folder in your local reactjs.org repository
+1. `git checkout master` from any folder in your local discord-task-bot repository
 2. `git pull origin master` to ensure you have the latest main code
 3. `git checkout -b the-name-of-my-branch` (replacing the-name-of-my-branch with a suitable name) to create a branch
 
@@ -27,6 +27,7 @@ Create Pull Requests only for existing Issues (which are assigned to you). If yo
 
 ### Push it
 1. git add -A && git commit -m "My message" (replacing My message with a commit message, such as Fix header logo on Android) to stage and commit your changes
+> Note: Have a look at [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for good commit messages
 2. git push my-fork-name the-name-of-my-branch
 3. Go to the [discord-task-bot](https://kavin25/discord-task-bot) repo and you should see recently pushed branches.
 4. Follow GitHub's instructions.
