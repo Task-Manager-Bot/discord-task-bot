@@ -5,7 +5,16 @@ Make sure to follow the CODE_OF_CONDUCT.md
 ## Testing
 There's no testing in place at the moment. A pull request for the same will be very much appreciated.
 
-## Submitting Changes
+## How to report a bug or a new feature?
+If you find a bug, or if you're looking for a new feature, create a new `Issue` with proper description.
+
+## Beginner?
+Check the Issues labelled as `good-first-issue`.
+
+## How to submit changes?
+Create Pull Requests only for existing Issues (which are assigned to you). If you want to be assigned to an issue, comment on the issue
+
+
 ### Create a branch
 1. `git checkout main` from any folder in your local reactjs.org repository
 2. `git pull origin master` to ensure you have the latest main code
