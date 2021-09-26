@@ -19,7 +19,7 @@ Just add, assign(if needed) and mark as done(tick off)
 1. Clone
 
 ```sh
-git clone git@github.com:kavin25/discord-task-bot.git
+git clone git@github.com:Task-Manager-Bot/discord-task-bot.git
 ```
 
 2. Install Dependencies
@@ -44,7 +44,7 @@ docker-compose up
 1. Clone
 
 ```sh
-git clone git@github.com:kavin25/discord-task-bot.git
+git clone git@github.com:Task-Manager-Bot/discord-task-bot.git
 ```
 
 2. Install Dependencies
