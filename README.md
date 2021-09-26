@@ -70,4 +70,4 @@ yarn dev
 ```
   
 ## Contributing
-Read the CONTRIBUTING.md file
+Read the [CONTRIBUTING.md](CONTRIBUTING.md) file
