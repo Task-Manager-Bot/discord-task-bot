@@ -21,7 +21,7 @@ Create Pull Requests only for existing Issues (which are assigned to you). If yo
 3. `git checkout -b the-name-of-my-branch` (replacing the-name-of-my-branch with a suitable name) to create a branch
 
 ### Make the change
-1. Follow the "Setup" instructions in the README
+1. Follow the [Setup](README.md#setup) instructions in the README
 2. Save the files and check in the browser
 3. Test the change (not implemented at the moment)
 
