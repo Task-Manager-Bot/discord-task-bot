@@ -2,7 +2,7 @@
 
 ## Usage
 
-To use directly, click on this [link](https://discord.com/api/oauth2/authorize?client_id=829723733966979142&permissions=8&scope=bot)
+To use directly, click on this [link](https://discord.com/api/oauth2/authorize?client_id=829723733966979142&permissions=268463184&scope=bot)
 
 ## How to use?
 Just add, assign(if needed) and mark as done(tick off)
