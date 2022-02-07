@@ -48,4 +48,4 @@ cmdload();
 eventload();
 client.on("error", console.error);
 module.exports = { client };
-client.login(process.env.TOKEN);
+client.login(process.env.DISCORD_TOKEN);
