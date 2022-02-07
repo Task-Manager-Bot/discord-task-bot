@@ -4,8 +4,7 @@ module.exports = {
   name: "done",
   description: "ticks off the completed task",
   async run(client, message, args) {
-    const splitArgs = args.split(" ");
-    const id = parseInt(splitArgs.shift());
+    const id = parseInt(args.shift());
 
     if (!id) {
       const errorEmbed = new Discord.MessageEmbed()
