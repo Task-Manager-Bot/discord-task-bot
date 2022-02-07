@@ -5,8 +5,7 @@ module.exports = {
   description: "add task to the bot",
   async run(client, message, args) {
     try {
-      const splitArgs = args.split(" ");
-      const textWithTaggedUser = splitArgs.join(" ");
+      const textWithTaggedUser = args.join(" ");
       // Replace tagged users with ""
       const rg = /<@\![0-9]{1,}>/;
       const text = textWithTaggedUser.replace(rg, "");
