@@ -14,6 +14,7 @@
   },
   "scripts": {
     "dev": "nodemon index",
+    "lint": "prettier --write \"**/*.+(js|ts|json|sql|md)\"",
     "start": "node index.js",
     "server": "nodemon src/index"
   }

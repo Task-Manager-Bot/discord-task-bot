@@ -5,6 +5,7 @@
 To use directly, click on this [link](https://discord.com/api/oauth2/authorize?client_id=829723733966979142&permissions=268463184&scope=bot)
 
 ## How to use?
+
 Just add, assign(if needed) and mark as done(tick off)
 
 1. t!add <text> - Add a new task (Mention someone to assign to them)
@@ -16,6 +17,7 @@ Just add, assign(if needed) and mark as done(tick off)
 ## Setup
 
 ### With Docker
+
 1. Clone
 
 ```sh
@@ -34,13 +36,15 @@ yarn
 ```sh
 cp .env.docker.example .env
 ```
-  
+
 4. Run docker compose
+
 ```sh
 docker-compose up
 ```
 
 ### Without Docker
+
 1. Clone
 
 ```sh
@@ -59,17 +63,18 @@ yarn
 ```sh
 cp .env.example .env
 ```
-  
+
 4. Change DB host in `db` to `localhost` in `config/sequelize.js`
 
-4. Run locally (using nodemon)
+5. Run locally (using nodemon)
 
 ```sh
 npm run dev
 yarn dev
 ```
-  
+
 ## Contributing
+
 Read the [CONTRIBUTING.md](CONTRIBUTING.md) file
  
 ## Contributers
