@@ -8,11 +8,12 @@ module.exports = {
       .setTitle("Help")
       .setDescription(
         `
-		    1. \`t!add <text>\` - Add a new task (Mention someone to assign to them)
-		    2. \`t!list\` - List all tasks(not done)
-		    3. \`t!done <id in list>\` - Mark a task as done
-		    4. \`t!done-list\` - List all tasks(done)
-		    5. \`t!undo <id in list>\` - Unmark a task as done
+		    1. \`t!add <text> @user\` - Add a new task (Mention someone to assign to them - optional)
+		    2. \`t!assign <id in list> @user\` - Assign a task to someone
+		    3. \`t!list\` - List all tasks(not done)
+		    4. \`t!done <id in list>\` - Mark a task as done
+		    5. \`t!done-list\` - List all tasks(done)
+		    6. \`t!undo <id in list>\` - Unmark a task as done
 		  `
       );
 

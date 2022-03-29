@@ -18,6 +18,15 @@ module.exports = {
     }
 
     const task = await Task.findByPk(id);
+
+    if (!task) {
+      const errorEmbed = new Discord.MessageEmbed()
+        .setColor("#0099ff")
+        .setTitle("Error")
+        .setDescription("Task does not exist");
+      return message.channel.send(errorEmbed);
+    }
+
     if (task.serverId === message.guild.id) {
       await Task.update(
         { isDone: true },
