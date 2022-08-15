@@ -17,7 +17,8 @@ jobs:
           command: |
             cd ~/code/discord-task-bot
             git pull origin master
-            docker-compose up --build -d
+            pm2 restart dtb
           host: ${{ secrets.HOST }}
+          port: ${{ secrets.PORT }}
           user: root
           pass: ${{ secrets.HOST_PASSWORD }}
