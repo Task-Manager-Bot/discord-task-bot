@@ -5,7 +5,7 @@ module.exports = {
   execute: async (message) => {
     prefix = "t!" || "t~";
 
-    const args = msg.startsWith(prefix) ? msg.slice(prefix.prefix).trim().split(/ +/g) : [""];
+    const args = msg.startsWith(prefix) ? msg.slice(prefix.length).trim().split(/ +/g) : [""];
     // const args = message.content.slice(prefix.length).trim().split(/ +/g);
 
     const command = args.shift().toLowerCase();
