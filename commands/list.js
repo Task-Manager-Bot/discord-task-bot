@@ -29,8 +29,8 @@ module.exports = {
 
     await interactions.reply(
       messageContent +
-        "\n To tick off a task, send `t!done 1`. Replace 1 with the ID(last digit)" +
-        "\n To view tasks done, send `t!done-list`"
+        "\n To tick off a task, send `/done 1`. Replace 1 with the ID(last digit)" +
+        "\n To view tasks done, send `/done-list`"
     );
   },
 };

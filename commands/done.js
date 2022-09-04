@@ -2,8 +2,6 @@ const Task = require("../models/Task");
 const { SlashCommandBuilder } = require("discord.js");
 
 module.exports = {
-  name: "done",
-  description: "ticks off the completed task",
   data: new SlashCommandBuilder()
     .setName("done")
     .setDescription("Done")
