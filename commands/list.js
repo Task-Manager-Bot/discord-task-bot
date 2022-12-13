@@ -4,7 +4,7 @@ const { SlashCommandBuilder } = require("discord.js");
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("list")
-    .setDescription("List of all tasks"),
+    .setDescription("List of the current tasks"),
   async execute(interactions) {
     const tasks = await Task.findAll({
       where: {
