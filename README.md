@@ -8,16 +8,16 @@ To use directly, click on this [link](https://discord.com/api/oauth2/authorize?c
 
 Just add, assign(if needed) and mark as done(tick off)
 
-1. t!add <text> - Add a new task (Mention someone to assign to them)
-2. t!list - List all tasks(not done)
-3. t!done <id in list> - Mark a task as done
-4. t!done-list - List all tasks(done)
-5. t!undo <id in list> - Unmark a task as done
+1. /add <text> - Add a new task (Mention someone to assign to them)
+2. /list - List all tasks(not done)
+3. /done <id in list> - Mark a task as done
+4. /done-list - List all tasks(done)
+5. /undo <id in list> - Unmark a task as done
 
 ## Setup
 
 ### With Docker
-
+> Note: This might be outdated and might not work anymore
 1. Clone
 
 ```sh
