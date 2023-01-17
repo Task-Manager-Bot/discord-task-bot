@@ -1,4 +1,5 @@
 require("dotenv").config();
+const { ActivityType } = require("discord.js");
 const Discord = require("discord.js");
 const fs = require("node:fs");
 const path = require("node:path");
@@ -22,6 +23,9 @@ for (const file of commandsFiles) {
 }
 
 client.once("ready", () => {
+  client.user.setActivity("/help | task-manager-bot.github.io", {
+    type: ActivityType.Playing,
+  });
   console.log("Bot is ready!");
 });
 
